@@ -19,7 +19,7 @@ def startup():
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost", "http://localhost:5173", "https://amortization-front-prueba.vercel.app/"],
+    allow_origins=["https://amortization-front-prueba.vercel.app/", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
