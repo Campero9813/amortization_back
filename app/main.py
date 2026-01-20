@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.simulate_endpoint import router as simulate_router
 from app.core.database import engine
-from app.mopdels.simulation_model import simulation
+from app.models.simulation_model import Simulation
 
 app = FastAPI(title="Tabla de Amortizacion Microservicio")
 
