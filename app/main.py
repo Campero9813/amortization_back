@@ -8,6 +8,13 @@ from app.core.database import engine
 from app.models.simulation_model import Simulation
 
 app = FastAPI(title="Tabla de Amortizacion Microservicio")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://amortization-front-prueba.vercel.app", "http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.on_event("startup")
 def startup():
@@ -17,12 +24,6 @@ def startup():
     else:
         print("⚠️ Engine no disponible en startup")
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["https://amortization-front-prueba.vercel.app/", "http://localhost:5173"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+
 
 app.include_router(simulate_router)
