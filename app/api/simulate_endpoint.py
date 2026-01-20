@@ -9,6 +9,10 @@ from app.core.database import SessionLocal
 router = APIRouter()
 
 def get_db():
+    if SessionLocal is None:
+        raise RuntimeError("Database no inicializada")
+
+    
     db = SessionLocal()
     try:
         yield db
