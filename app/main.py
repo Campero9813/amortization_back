@@ -15,7 +15,7 @@ app.add_middleware(
         "http://localhost:5173",
         "http://192.168.4.32", 
         "http://192.168.4.254",
-        "https://amortization-front-prueba-q2xfjc2a9-alejandro-camperos-projects.vercel.app/"],
+        "https://amortization-front-prueba-q2xfjc2a9-alejandro-camperos-projects.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
