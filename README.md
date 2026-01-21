@@ -77,17 +77,3 @@ npm run lint
 - URL configurable mediante variables de entorno
 
 ---
-
-## 🎯 Objetivo del Proyecto
-
-SPA moderna orientada a buenas prácticas de desarrollo frontend y consumo de servicios REST, pensada como parte de un portafolio profesional.
-
----
-
-## 📌 Próximas Mejoras
-
-- Validaciones avanzadas
-- Manejo de loading y errores
-- Mejoras visuales
-- Pruebas unitarias
-- Deploy en Vercel o Netlify
