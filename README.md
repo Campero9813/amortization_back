@@ -195,33 +195,8 @@ export const simulate = async (payload) => {
 
 ---
 
-## 🔐 Buenas prácticas implementadas
-
-- Separación de responsabilidades
-- Código tolerante a fallos de infraestructura
-- No bloqueo por procesos externos
-- Variables de entorno
-- Arquitectura escalable
-
----
-
-## 📌 Próximas mejoras
-
-- Migraciones con Alembic
-- Endpoint de historial
-- Autenticación
-- Logs estructurados
-- Colas (Redis / RabbitMQ)
-- Dockerización
-
----
-
 ## 👨‍💻 Autor
 
 Proyecto desarrollado como ejemplo de **backend profesional con Python y FastAPI**.
 
 ---
-
-## 📄 Licencia
-
-MIT
